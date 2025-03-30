@@ -1,6 +1,6 @@
 import iconStar from "./assets/icon-star.svg"
 import { useState } from "react"
-
+import illustrationThankYou from "./assets/illustration-thank-you.svg"
 
 
 export function App(){
@@ -21,9 +21,9 @@ function handleChangeRateNote(value){
 }
 
   return(
-    <div className="h-svh bg-very-dark-blue text-white flex justify-center items-center px-6 " >
+ 
      
-     {submited === false ? (
+     submited === false ? (
       
      <div className="bg-radial-gradient max-w-103  px-6 pt-6 pb-8 rounded-2xl font-overpass ">
     
@@ -52,11 +52,17 @@ function handleChangeRateNote(value){
       </div>
      ) : (
 
-      <p>Outro codigo</p>
+      <div className="bg-radial-gradient max-w-103  px-6 pt-6 pb-8 rounded-2xl font-overpass ">
+    
+      <img src={illustration-thank-you.svg} alt="illustration thank you" />
+
+      <p></p>
+
+      </div>
 
 
-     )}
+     )
  
-    </div>
+   
   )
 }
